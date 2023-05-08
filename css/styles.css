@@ -265,3 +265,88 @@ a{
         font-size: 1.5rem;
     }
 }
+
+/* cards */
+/* .plan{
+
+} */
+
+.card{
+    width: 330px;
+    height:500px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    border-radius: 5px;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.card__header{
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    padding: 3rem;
+}
+
+.card--primary .card__header{
+    background-color: var(--color-primary);
+
+
+}
+
+.card--secondary .card__header{
+    background-color: var(--color-secondary);
+}
+
+.plan__name{
+    font-size: 1.4rem;
+    display: block;
+}
+
+.plan--popular .card__header{
+    position: relative;
+}
+
+.plan--popular .card__header::before{
+    content: url(../images/green-tick.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right:5%;
+
+}
+
+.plan__price{
+    font-size: 5rem;
+}
+.plan__billing-cycle{
+    font-size: 1.6rem;
+}
+.plan__description{
+    font-size: 1.4rem;
+    display: block;
+}
+
+.card__body{
+    font-size: 1.5rem;
+    padding: 2rem 2rem 2rem 1rem;
+}
+
+/* media object */
+
+.media{
+    display: flex;
+}
+
+.media__title{
+    margin-top: 0;
+}
+
+.media__body{
+    margin: 0 2rem;
+}
+
+.media__image{
+    margin-top: 1rem;
+}
